@@ -65,9 +65,9 @@ Este comando iniciará a execução dos testes automatizados usando o Cypress no
 
 Para executar os testes no modo interativo (com interface gráfica), use o seguinte comando na raiz do projeto:
 
-      npx cypress open --spec cypress/integration/TesteAPI.spec.js
-
+      npx cypress open 
 
 Esse comando abrirá o Cypress Test Runner, onde será possivel interagir com os testes em tempo real, verificar os resultados detalhados e depurar os testes conforme necessário.
+Clique no arquivo de teste TesteAPI.spec.js para executar os cenários.
 
 
