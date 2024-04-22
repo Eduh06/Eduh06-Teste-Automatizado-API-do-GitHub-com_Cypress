@@ -46,7 +46,9 @@ Antes de executar os testes, é necessário configurar algumas variáveis de amb
    
        npm install cypress --save-dev
 
-OBS: Executar o comando dentro da pasta do projeto.
+OBS: Executar o comando dentro da pasta do projeto. Você pode acessar através do comando :
+
+      cd Teste-Automatizado-API-do-GitHub-com_Cypress
 
 ## Como executar os testes
 
