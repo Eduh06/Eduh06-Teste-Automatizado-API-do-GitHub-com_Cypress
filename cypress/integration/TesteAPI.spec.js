@@ -30,6 +30,19 @@ describe('Testes da API do GitHub', () => {
       });
   });
 
+  it('Deve consultar o repositório criado', () => {
+          cy.request({
+              method: 'GET',
+              url: `https://api.github.com/repos/${Cypress.env('user')}/${repositorioNome}`,
+              headers: {
+                  Authorization: `Bearer ${Cypress.env('TOKEN')}`,
+              },
+          }).then((response) => {
+              expect(response.status).to.eq(200);
+              expect(response.body.name).to.eq(repositorioNome);
+          });
+      });
+
   it('Deve criar uma issue no repositório recém-criado', () => {
       cy.request({
           method: 'POST',
